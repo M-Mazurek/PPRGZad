@@ -39,16 +39,18 @@ void zad2()
 
     for (int i = x; i <= y; i++)
     {
+        int iSum = 0;
+
+        for (int _i = 1; _i < i; _i++)
+            if (i % _i == 0)
+                iSum += _i;
+
         for (int j = i; j <= y; j++)
         {
             if (i == j)
                 continue;
 
-            int iSum = 0, jSum = 0;
-
-            for (int _i = 1; _i < i; _i++)
-                if (i % _i == 0)
-                    iSum += _i;
+            int jSum = 0;
 
             for (int _j = 1; _j < j; _j++)
                 if (j % _j == 0)
