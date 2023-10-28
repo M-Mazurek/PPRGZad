@@ -63,8 +63,6 @@ void zad2()
     for (int i = 0; i < passLength; i++)
         pass += chars[rand() % charCount];
 
-    std::cout << pass;
-
     std::string guess;
     int guesses(0);
 
